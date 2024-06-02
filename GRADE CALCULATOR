@@ -1,0 +1,36 @@
+using System;
+
+namespace GradeCalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter your score between 0 and 100:");
+            double testScore = Convert.ToDouble(Console.ReadLine());
+
+            if (testScore >= 90)
+            {
+                Console.WriteLine("A");
+            }
+            else if (testScore >= 80)
+            {
+                Console.WriteLine("B");
+            }
+            else if (testScore >= 70)
+            {
+                Console.WriteLine("C");
+            }
+            else if (testScore >= 60)
+            {
+                Console.WriteLine("D");
+            }
+            else
+            {
+                Console.WriteLine("F");
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
